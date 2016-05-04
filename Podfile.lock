@@ -1,0 +1,103 @@
+PODS:
+  - AFNetworking (2.6.3):
+    - AFNetworking/NSURLConnection (= 2.6.3)
+    - AFNetworking/NSURLSession (= 2.6.3)
+    - AFNetworking/Reachability (= 2.6.3)
+    - AFNetworking/Security (= 2.6.3)
+    - AFNetworking/Serialization (= 2.6.3)
+    - AFNetworking/UIKit (= 2.6.3)
+  - AFNetworking/NSURLConnection (2.6.3):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/NSURLSession (2.6.3):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (2.6.3)
+  - AFNetworking/Security (2.6.3)
+  - AFNetworking/Serialization (2.6.3)
+  - AFNetworking/UIKit (2.6.3):
+    - AFNetworking/NSURLConnection
+    - AFNetworking/NSURLSession
+  - AVOSCloud (3.2.8)
+  - AVOSCloudIM (3.2.8):
+    - AVOSCloud
+  - FDFullscreenPopGesture (1.1)
+  - HappyDNS (0.2.3)
+  - JPush (2.1.6)
+  - MJExtension (3.0.10)
+  - MJRefresh (3.1.0)
+  - MOBFoundation (1.5.1)
+  - Pingpp (2.2.1):
+    - Pingpp/Alipay (= 2.2.1)
+    - Pingpp/Core (= 2.2.1)
+    - Pingpp/UnionPay (= 2.2.1)
+  - Pingpp/Alipay (2.2.1):
+    - Pingpp/Core
+  - Pingpp/Core (2.2.1):
+    - Pingpp/Network
+  - Pingpp/Network (2.2.1)
+  - Pingpp/UnionPay (2.2.1):
+    - Pingpp/Core
+  - PureLayout (3.0.1)
+  - Qiniu (7.0.17):
+    - AFNetworking (~> 2.0)
+    - HappyDNS (~> 0.2)
+  - ShareSDK3 (3.2.5):
+    - ShareSDK3/ShareSDK (= 3.2.5)
+  - ShareSDK3/ShareSDK (3.2.5)
+  - ShareSDK3/ShareSDKPlatforms/QQ (3.2.5)
+  - ShareSDK3/ShareSDKPlatforms/SinaWeibo (3.2.5)
+  - ShareSDK3/ShareSDKPlatforms/WeChat (3.2.5)
+  - ShareSDK3/ShareSDKUI (3.2.5)
+  - WebViewJavascriptBridge (5.0.5)
+  - YYCache (1.0.3)
+  - YYImage (1.0.1):
+    - YYImage/Core (= 1.0.1)
+  - YYImage/Core (1.0.1)
+  - YYText (1.0.5)
+  - YYWebImage (1.0.3):
+    - YYCache
+    - YYImage
+
+DEPENDENCIES:
+  - AVOSCloudIM
+  - FDFullscreenPopGesture (= 1.1)
+  - JPush
+  - MJExtension
+  - MJRefresh
+  - MOBFoundation
+  - Pingpp
+  - PureLayout
+  - Qiniu (~> 7.0)
+  - ShareSDK3
+  - ShareSDK3/ShareSDKPlatforms/QQ
+  - ShareSDK3/ShareSDKPlatforms/SinaWeibo
+  - ShareSDK3/ShareSDKPlatforms/WeChat
+  - ShareSDK3/ShareSDKUI
+  - WebViewJavascriptBridge (~> 5.0)
+  - YYText
+  - YYWebImage
+
+SPEC CHECKSUMS:
+  AFNetworking: cb8d14a848e831097108418f5d49217339d4eb60
+  AVOSCloud: b789619942a4275e615f8f0782e7475675951b95
+  AVOSCloudIM: d2f6a13d64f9676a43e4d68b822bd1be3f96fb76
+  FDFullscreenPopGesture: a8a620179e3d9c40e8e00256dcee1c1a27c6d0f0
+  HappyDNS: 6d85942e64c28b4fa61f8c76580398f52d6d1d11
+  JPush: 9732a2a9e6a34729f660d6275704a5803d661e83
+  MJExtension: d86aacb740c87519d20e3cca55b6fa4be6cc7548
+  MJRefresh: 743e6404967d1c2c688472ea3ecfde247d872db4
+  MOBFoundation: 79efc94db961fe5a08cf32de69166f6a29a3b2b5
+  Pingpp: dee508790e80d288459f58ea407507f47885ff36
+  PureLayout: f35f5384c9c4e4479df041dbe33ad7577b71ddfb
+  Qiniu: 2c05af1f9d580c036b18faf832cc98e98bfb21bc
+  ShareSDK3: ccdd8ec971044703e7722e19c2f3b38fb03775e2
+  WebViewJavascriptBridge: a4d502315f1b8d9a51cd6a9174147ed567ec3bc5
+  YYCache: 282f35b5b0990833d0b7a06d864a87141a021da2
+  YYImage: b41b45bc5f32bfcdf67bdfb9c09da9e9832357c0
+  YYText: ac09660c9ccd9b817f409a20caa6f5587444d2ae
+  YYWebImage: 8da75a611fd0d2e0f58a273f9ca0bc731614cb0d
+
+COCOAPODS: 0.39.0

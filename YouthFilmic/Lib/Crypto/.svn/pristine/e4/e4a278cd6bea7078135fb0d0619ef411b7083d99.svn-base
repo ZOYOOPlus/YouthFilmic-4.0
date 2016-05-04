@@ -1,0 +1,83 @@
+//
+//  HXCrypto.m
+//  HXFundManager
+//
+//  Created by Sha Tao on 15-1-22.
+//  Copyright (c) 2015年 China Asset Management Co., Ltd. All rights reserved.
+//
+
+#import "HXCrypto.h"
+#import "RNEncryptor.h"
+#import "RNDecryptor.h"
+#import "Base64.h"
+
+static const RNCryptorSettings kRNCryptorAES256WithoutIVSettings = {
+    .algorithm = kCCAlgorithmAES128,
+    .blockSize = kCCBlockSizeAES128,
+    .IVSize = 0,
+    .options = kCCOptionPKCS7Padding,
+    .HMACAlgorithm = kCCHmacAlgSHA256,
+    .HMACLength = CC_SHA256_DIGEST_LENGTH,
+    
+    .keySettings = {
+        .keySize = kCCKeySizeAES256,
+        .saltSize = 8,
+        .PBKDFAlgorithm = kCCPBKDF2,
+        .PRF = kCCPRFHmacAlgSHA1,
+        .rounds = 10000
+    },
+    
+    .HMACKeySettings = {
+        .keySize = kCCKeySizeAES256,
+        .saltSize = 8,
+        .PBKDFAlgorithm = kCCPBKDF2,
+        .PRF = kCCPRFHmacAlgSHA1,
+        .rounds = 10000
+    }
+};
+
+@implementation HXCrypto
+
++ (NSString *)encryptorWithAES:(NSString *)encryptString withIV:(BOOL)withIV
+{
+    NSData *encryptData = [encryptString dataUsingEncoding:NSUTF8StringEncoding];
+    NSError *error;
+    RNCryptorSettings encryptedSetting;
+    if (withIV)
+    {
+        encryptedSetting = kRNCryptorAES256Settings;
+    }
+    else
+    {
+        encryptedSetting = kRNCryptorAES256WithoutIVSettings;
+    }
+    NSData *encryptedData = [RNEncryptor encryptData:encryptData
+                                        withSettings:encryptedSetting
+                                            password:[NSString stringWithFormat:@"%@fm#EDCxsw2", NSStringFromClass([self class])]
+                                               error:&error];
+    return [encryptedData base64EncodedString];
+}
+
++ (NSString *)decryptorWithAES:(NSString *)decryptString withIV:(BOOL)withIV
+{
+    NSData *decryptData = [decryptString base64DecodedData];
+    NSError *error;
+    
+    RNCryptorSettings encryptedSetting;
+    if (withIV)
+    {
+        encryptedSetting = kRNCryptorAES256Settings;
+    }
+    else
+    {
+        encryptedSetting = kRNCryptorAES256WithoutIVSettings;
+    }
+    NSData *decryptedData = [RNDecryptor decryptData:decryptData
+                                        withSettings:encryptedSetting
+                                            password:[NSString stringWithFormat:@"%@fm#EDCxsw2", NSStringFromClass([self class])]
+                                               error:&error];
+    
+    return [[NSString alloc] initWithData:decryptedData  encoding:NSUTF8StringEncoding];
+}
+
+@end

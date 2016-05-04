@@ -1,0 +1,27 @@
+//
+//  PrefixHeader.pch
+//  YouthFilmic
+//
+//  Created by 高刘备 on 16/4/13.
+//  Copyright © 2016年 寰影(北京)文化传媒有限公司. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#import "UIView+Toast.h"
+#import "MBProgressHUD.h"
+#import <MJRefresh/MJRefresh.h>
+#import <MJExtension/MJExtension.h>
+#import "UIView+Extension.h"
+#import "NetworkSingleton.h"
+#import <YYWebImage/YYWebImage.h>
+#import "HXSingleton.h"
+#import "HXTools.h"
+#import "User.h"
+#import <YYLabel.h>
+#define kScreen_Width [UIScreen mainScreen].bounds.size.width
+#define kScreen_Height [UIScreen mainScreen].bounds.size.height
+#endif /* PrefixHeader_pch */

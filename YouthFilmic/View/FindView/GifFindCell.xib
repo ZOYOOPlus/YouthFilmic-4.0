@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="126" id="KGk-i7-Jjw" customClass="GifFindCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="126"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="125.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="NP1-NV-s8l" customClass="YYAnimatedImageView">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="125.5"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WOh-4u-ZNI">
+                        <rect key="frame" x="60" y="42.5" width="200" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="7u8-o0-xoi"/>
+                            <constraint firstAttribute="width" constant="200" id="wxr-sH-OMp"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="NP1-NV-s8l" secondAttribute="bottom" id="PBI-J6-BxP"/>
+                    <constraint firstItem="NP1-NV-s8l" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Y8m-Iv-eoq"/>
+                    <constraint firstItem="NP1-NV-s8l" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="hCX-Qf-2yw"/>
+                    <constraint firstItem="WOh-4u-ZNI" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="sYc-0M-Sn0"/>
+                    <constraint firstAttribute="trailing" secondItem="NP1-NV-s8l" secondAttribute="trailing" id="vXX-el-BZT"/>
+                    <constraint firstItem="WOh-4u-ZNI" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="zHI-aT-z6o"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="contenLabel" destination="WOh-4u-ZNI" id="lRs-gv-3xN"/>
+                <outlet property="gifImageview" destination="NP1-NV-s8l" id="aKn-fH-Yvs"/>
+            </connections>
+            <point key="canvasLocation" x="280" y="269"/>
+        </tableViewCell>
+    </objects>
+</document>

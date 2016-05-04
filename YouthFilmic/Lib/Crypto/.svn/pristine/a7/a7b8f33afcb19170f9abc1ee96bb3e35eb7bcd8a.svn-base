@@ -1,0 +1,16 @@
+//
+//  HXCrypto.h
+//  HXFundManager
+//
+//  Created by Sha Tao on 15-1-22.
+//  Copyright (c) 2015年 China Asset Management Co., Ltd. All rights reserved.
+//
+
+#import <Foundation/Foundation.h>
+
+@interface HXCrypto : NSObject
+
++ (NSString *)encryptorWithAES:(NSString *)encryptString withIV:(BOOL)withIV;
++ (NSString *)decryptorWithAES:(NSString *)decryptString withIV:(BOOL)withIV;
+
+@end

@@ -1,0 +1,24 @@
+{
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "8e1b318d-a9dc-754e-8cb7-16f33fba1cda++4268" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "8e1b318d-a9dc-754e-8cb7-16f33fba1cda++4268" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "4B9A300C-FCB9-454A-8D9D-FF206BA29FB2",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "8e1b318d-a9dc-754e-8cb7-16f33fba1cda++4268" : "YouthFilmic%202%203\/YouthFilmic\/Lib\/Crypto\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "YouthFilmic",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "YouthFilmic.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "http:\/\/10.67.1.1\/subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "8e1b318d-a9dc-754e-8cb7-16f33fba1cda++4268"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="10171" systemVersion="15C50" minimumToolsVersion="Xcode 7.0">
+    <entity name="NormallMessage" syncable="YES">
+        <attribute name="clentID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="content" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="date" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="dateStr" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="height" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="isme" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="mesageType" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="picUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="strVoiceTime" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="voicePath" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="yuliu" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="yuliu1" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="yuliu2" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="yuliu4" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="yuliu5" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="NormallMessage" positionX="-63" positionY="-18" width="128" height="270"/>
+    </elements>
+</model>
